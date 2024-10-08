@@ -1,0 +1,148 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #121212;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    background-image: url('/public/imagens/fundo/black.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header, footer {
+    background: linear-gradient(to right, #160013, #9400d3);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    margin-top: 20px;
+}
+
+nav a {
+    color: #fff;
+    margin: 0 25px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.3s;
+    font-family: 'Times New Roman', Times, sans-serif;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    color: #db87ff;
+}
+
+.dropdown {
+    display: inline-block;
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+    left: 50%; /* Centraliza horizontalmente em relação ao elemento pai */
+    transform: translateX(-50%); /* Ajusta para o centro */
+}
+
+.dropdown-content a,
+.dropdown-content label {
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover,
+.dropdown-content label:hover {
+    background-color: #9400d3;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+section {
+    padding: 40px 20px;
+    text-align: left;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+h2 {
+    color: #d77dfd;
+    margin-bottom: 20px;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 8px;
+    margin-left: 20px;
+}
+
+p, ul {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-left: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 10px 0;
+}
+
+.about-img {
+    display: block;
+    margin: 20px auto;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.donation {
+    text-align: center;
+    margin-top: 20px;
+    color: #fff;
+}
+
+.donation p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.qr-code {
+    display: block; 
+    margin: 0 auto;
+    width: 150px;
+}
+
+.card {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    text-align: center;
+    width: 200px;
+    float: right;
+}
+
+.card h3 {
+    margin-top: 0;
+    font-size: 20px;
+    color: #d77dfd;
+}
+
+footer {
+    margin-top: 20px;
+}

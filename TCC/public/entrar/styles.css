@@ -1,0 +1,188 @@
+/* Estilos do corpo da página */ 
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow-y: scroll;
+    background-image: url('/TCC/public/imagens/fundo/branco.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+@font-face{
+    font-family: 'Glacial';
+    src: url('/TCC/public/imagens/fontes/GlacialIndifference.ttf') format('truetype');
+}
+@font-face{
+    font-family: 'LoveloBlack';
+    src: url('/TCC/public/imagens/fontes/Lovelo_Black.ttf') format('truetype');
+} /* adiciona a fonte para ser usada */
+
+header {
+    background: linear-gradient(to right, #000000, #9411cf);
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    height: 16%;
+    top: 0;
+    text-align: right;
+    letter-spacing: 0.4cap;
+    font-family: 'LoveloBlack', sans-serif;
+}
+h1{
+    margin: 3%;
+    font-size: 210%;
+}
+
+.LOGOPORRA {
+    transition: transform 0.3s ease-in-out;
+    top: 1%;
+    left: 20px;
+    position: fixed;
+}
+.LOGOPORRA:hover{
+    transform: scale(1.2);
+}
+
+.fala {
+    font-family: 'glacial', sans-serif;
+    background: url('/TCC/public/imagens/balao_fala.png') no-repeat center/contain;
+    display: flex;
+    align-items: center;
+    text-align: center; 
+    padding: 5%;
+    color: #000;
+    font-size: calc(1.2vw + 1vh);
+    width: 60%;
+    height: 40%;
+    margin: 0 0 0 5%; 
+}
+
+
+
+
+
+/* Estilos do container principal */
+.container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin-right: 150px; 
+    }
+
+/* Estilos do formulário */
+.form-container {
+    margin-top: 20%;
+    background: linear-gradient(to right, #000000, #3f045b, #9411cf);
+    color: white;
+    padding: 20px;
+    border-radius: 20px;
+    height: 65%;
+    width: 70%;
+    transition: box-shadow 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.form-container:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+.form-container h2 {
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 4%;
+    text-align: center;
+}
+.form-container p {
+    margin-top: -5%;
+    font-size: 20px;
+    font-family: 'Glacial', sans-serif;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+/* Estilos dos inputs e select */
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container input[type="password"],
+.form-container select {
+    font-family: 'Glacial', sans-serif;
+    font-size: 100%;
+    width: 85%;
+    padding: 6px;
+    margin: 12px;
+    border: 2px solid white;
+    background: linear-gradient(to right, #000000, #3f045b, #9411cf);
+    color: white;
+    transition: background-color 0.3s ease-in-out;
+    display: flex;
+}
+
+/* Foco nos campos */
+.form-container input[type="text"]:focus,
+.form-container input[type="email"]:focus,
+.form-container input[type="password"]:focus,
+.form-container select:focus {
+    background: rgba(255, 255, 255, 1);
+    color:black
+}
+
+/* Checkbox para mostrar a senha */
+.form-container .checkbox-container {
+    display: flex;
+    align-items: center;
+    margin-top: 10%;
+}
+
+/* Ajuste do checkbox */
+.form-container input[type="checkbox"] {
+    margin-left: -40px;
+}
+
+.form-container select::after {
+    content: '▽';
+}
+
+/* botão de entrar */
+.entrar {
+    margin-top: 5%;
+    width: 25%;
+    padding: 15px;
+    border: none;
+    background: #000000;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    margin-bottom: 5%;
+}
+.entrar:hover {
+    background-color: #f9ecff;
+    color: #110019;
+}
+
+.cadastro p2 {
+    margin-top: 10%;
+    font-size: 18px;
+    font-family: 'Glacial', sans-serif;
+    text-align: center;
+}
+.cadastro a {
+    margin-top: 10%;
+    font-size: 18px;
+    font-family: 'Glacial', sans-serif;
+    text-align: center;
+}
+
+
+
+
+
+
